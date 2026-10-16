@@ -36,23 +36,25 @@
 <body>
 
 <h1>LocaLens — Privacy Policy</h1>
-<p class="updated">Last updated: September 30, 2026</p>
+<p class="updated">Last updated: October 16, 2026</p>
 <nav><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></nav>
 
 <p>LocaLens ("the app") is an offline translator for photos, typed text and live conversation.
-<strong>Everything you photograph, say or type is processed on your device and never leaves it</strong> —
+<strong>Everything you photograph, say or type is processed on your device and stays there</strong> unless you choose to send it as feedback —
 translation, text recognition in photos and speech recognition all run on the phone, and work in flight mode.
-LocaLens has no account and does not collect your content.</p>
+LocaLens has no account and does not collect your content, apart from feedback you choose to send.</p>
 
-<p>The app uses the internet for two things only: <strong>downloading its translation and speech models</strong>
-once, and — <strong>only if you agree</strong> — sending <strong>anonymous usage statistics</strong>. Both are described
+<p>The app uses the internet for three things only: <strong>downloading its translation and speech models</strong>
+once; — <strong>only if you agree</strong> — sending <strong>anonymous usage statistics</strong>; and — <strong>only
+when you choose to</strong> — sending <strong>feedback</strong> about a translation or the app. All are described
 below. LocaLens shows no ads and contains no advertising or tracking SDK.</p>
 
 <h2>What stays on your device</h2>
 <ul>
   <li><strong>Photos and camera images</strong> you translate — read on the device; LocaLens does not upload them.</li>
   <li><strong>Microphone audio</strong> in Conversation and voice input — turned into text on the device while you
-  use the feature; audio is not recorded to storage or sent anywhere.</li>
+  use the feature; audio is not recorded to storage or sent anywhere, unless you turn on the record button (off by
+  default) and then choose to share the recording (see "Feedback you choose to send").</li>
   <li><strong>Text</strong> you type, paste or share into the app, and all <strong>translations</strong> — produced
   and kept on the device.</li>
   <li><strong>Your settings</strong> (languages, voice speed, earbuds mode and similar) — stored in the app's private
@@ -88,20 +90,59 @@ one small summary per day to LocaLens' own server (Cloudflare), containing:</p>
 and are not linked to your name, email or advertising ID. Our server does not store IP addresses. Daily summaries are
 kept for up to 24 months, then deleted.</p>
 
+<h2 id="feedback">Feedback you choose to send (optional)</h2>
+<p><strong>"Didn't understand".</strong> During a live conversation each half of the screen has a "Didn't understand"
+button, in that half's language. Tapping it asks the speaker, on their half, to say it another way, and marks that line
+on your phone. A mark by itself is never sent.</p>
+<p><strong>Sending the marked lines (off unless you agree).</strong> The app may ask once — together with the
+statistics question — whether to send the lines you mark; you can change this at any time in Settings › Privacy. If it
+is on, or if you choose "Send" after a conversation, the app sends, for each marked line only: the words that were
+recognised and the translation exactly as it was shown (and the corrected translation if it changed a moment later),
+the line just before it, for context, the two languages, the app version and the names of the speech and translation
+models used.</p>
+<p><strong>Sharing a whole conversation (only when you choose it).</strong> After a conversation you can rate it and,
+if something went wrong, choose to share the whole conversation as text. If you also recorded the conversation (the
+record button, off by default), you can include the recording — only if everyone in it agreed. Recordings are sent
+only over Wi-Fi.</p>
+<p><strong>Messages you type.</strong> Settings › About › "Send feedback / Report a problem" lets you write us a
+message; after a problem the app may also offer it ("Something went wrong? Tell us"), at most once a day. Only the text
+you type is sent, with the app version — nothing else.</p>
+<p><strong>Before anything is stored for sending, numbers of 4 or more digits and e-mail addresses are removed on your
+phone.</strong> A marked line may contain the words of the person you were talking to; please don't use this for
+conversations with private details, and don't type personal details into a message.</p>
+<p><strong>Ratings.</strong> If anonymous statistics are on, a thumbs up or down after a conversation is sent with: the
+day, the language pair, the app version, the reasons you picked, how many lines were translated and which of them (by
+number) you marked. No text.</p>
+<p><strong>Anonymous.</strong> None of this carries an account, your name, e-mail, phone number, advertising ID or any
+device ID, and our server does not store IP addresses. Each shared item gets a random reference made on your phone. To
+stop abuse, each request carries a short-lived token from Google Play Integrity (it confirms a genuine copy of the
+app; it does not identify you to us).</p>
+<p><strong>Offline first.</strong> What you send waits on your phone until it is online (recordings: until Wi-Fi), for
+up to 30 days (ratings: 14 days); then it is deleted unsent.</p>
+<p><strong>Use.</strong> We use feedback to find and fix bad translations and recognition: to build test sets and to
+improve and train LocaLens' translation and speech models. It is not sold or shared with anyone.</p>
+<p><strong>Keeping and deleting.</strong> Shared lines, conversations, recordings and messages are deleted from our
+server automatically after 6 months; ratings after 24 months. Settings › Privacy › "Shared with LocaLens" lists what
+you shared, with a Delete button for each item: it removes it from our server (or drops it from your phone if it was
+not sent yet).</p>
+<p><strong>Rating the app on Google Play.</strong> After a few successful translations the app may show Google Play's
+own rating card (at most once every 30 days). Google handles that card; LocaLens does not see whether or how you
+rated.</p>
+
 <h2>Permissions and why they're used</h2>
 <ul>
   <li><strong>Camera</strong> — to photograph text you want translated. Images are processed on the device.</li>
   <li><strong>Microphone</strong> — for Conversation and voice input. Speech is recognized on the device while the
   feature is on.</li>
-  <li><strong>Internet</strong> — to download models and (if you agree) send anonymous statistics.</li>
+  <li><strong>Internet</strong> — to download models and, if you agree or choose to, send anonymous statistics and feedback.</li>
   <li><strong>Notifications, foreground service (data sync), wake lock</strong> — to show download progress and keep
   large model downloads and live conversations running reliably.</li>
 </ul>
 
 <h2>Data sharing</h2>
-<p>LocaLens does not sell or share your content with anyone — it never has it. The only third parties involved are
+<p>LocaLens does not sell or share your content with anyone — it only ever has the feedback you choose to send. The only third parties involved are
 the model hosts named above (to deliver downloads) and <strong>Cloudflare</strong>
-(which runs LocaLens' download and statistics server).</p>
+(which runs LocaLens' download, statistics and feedback server).</p>
 
 <h2>Children</h2>
 <p>LocaLens is a general-purpose translation tool and is not directed at children under 13.</p>
