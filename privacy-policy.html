@@ -36,8 +36,8 @@
 <body>
 
 <h1>LocaLens — Privacy Policy</h1>
-<p class="updated">Last updated: October 19, 2026</p>
-<nav><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></nav>
+<p class="updated">Last updated: October 26, 2026</p>
+<nav><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="privacy-policy-ru.html">Русский</a></nav>
 
 <p>LocaLens ("the app") is an offline translator for photos, typed text and live conversation.
 <strong>Everything you photograph, say or type is processed on your device and stays there</strong> unless you choose to send it as feedback —
@@ -68,6 +68,12 @@ wizard or the Settings tab). They come from public model hosts (<strong>Hugging 
 <strong>GitHub</strong>) and from LocaLens' own download server (hosted on <strong>Cloudflare</strong>). Like any web
 server, these services receive technical connection data such as your IP address and device type while a download
 runs; LocaLens sends them nothing about you or your content, and our own server does not store IP addresses.</p>
+<p><strong>Genuine-copy check.</strong> Some models are protected, and our server releases them only to a genuine copy
+of LocaLens. For this the app sends our server a random install ID and a public key made on the device, plus one proof:
+in the Google Play version, a Google Play Integrity token; in the RuStore version, Android hardware key attestation.
+That proof carries the app's package name, the signing-certificate fingerprint, system-integrity facts (whether the
+bootloader is locked and the system verified) and a one-time code issued by the server. It carries no name, phone
+number, accounts or advertising ID; we use it only to allow the download and do not link it to you.</p>
 
 <h2>Checking for new models and languages</h2>
 <p>From time to time, on Wi-Fi, the app downloads one small public file from LocaLens' download server listing the
@@ -123,8 +129,8 @@ day, the language pair, the app version, the reasons you picked, how many lines 
 number) you marked. No text.</p>
 <p><strong>Anonymous.</strong> None of this carries an account, your name, e-mail, phone number, advertising ID or any
 device ID, and our server does not store IP addresses. Each shared item gets a random reference made on your phone. To
-stop abuse, each request carries a short-lived token from Google Play Integrity (it confirms a genuine copy of the
-app; it does not identify you to us).</p>
+stop abuse, each request carries a short-lived token from the genuine-copy check (Google Play Integrity or Android hardware key
+attestation, see "Model downloads"); it does not identify you to us.</p>
 <p><strong>Offline first.</strong> What you send waits on your phone until it is online (recordings: until Wi-Fi), for
 up to 30 days (ratings: 14 days); then it is deleted unsent.</p>
 <p><strong>Use.</strong> We use feedback to find and fix bad translations and recognition: to build test sets and to
@@ -135,7 +141,7 @@ you shared, with a Delete button for each item: it removes it from our server (o
 not sent yet).</p>
 <p><strong>Rating the app on Google Play.</strong> After a few successful translations the app may show Google Play's
 own rating card (at most once every 30 days). Google handles that card; LocaLens does not see whether or how you
-rated.</p>
+rated. The RuStore version does not show this card.</p>
 
 <h2>Permissions and why they're used</h2>
 <ul>
